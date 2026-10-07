@@ -7,7 +7,6 @@ import { CoupleCelebrationScene } from './components/CoupleCelebrationScene';
 import { ConfettiEffect } from './components/ConfettiEffect';
 import { ReviewModal } from './components/ReviewModal';
 import { DriveModal } from './components/DriveModal';
-import { RosePlayer } from './components/RosePlayer';
 import { initAuth } from './services/auth';
 import { User } from 'firebase/auth';
 import { soundEffects } from './utils/soundEffects';
@@ -262,7 +261,7 @@ Take the quiz: ${window.location.href}`;
               <Heart className="w-3.5 h-3.5 text-pink-400 fill-current animate-pulse" />
             </div>
 
-            {/* Character Stage: Panda first on left, Vaathu on right */}
+            {/* Character Stage: Panda and Vaathu floating gently in perfect sync */}
             <div className="relative flex items-center justify-center gap-4 sm:gap-8 py-2">
               <div className="relative animate-float-slow">
                 <PandaCharacter size="lg" expression="happy" />
@@ -279,8 +278,8 @@ Take the quiz: ${window.location.href}`;
                 <span className="text-[11px] text-pink-300 font-bold mt-1">Duo</span>
               </div>
 
-              <div className="relative animate-float-reverse">
-                <DuckCharacter size="lg" expression="excited" isSpeaking={false} />
+              <div className="relative animate-float-slow">
+                <DuckCharacter size="lg" expression="happy" isSpeaking={false} />
                 <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-amber-500/90 text-amber-950 font-bold text-[11px] shadow">
                   Vaathu 🦆
                 </span>
@@ -301,7 +300,7 @@ Take the quiz: ${window.location.href}`;
             <div className="grid grid-cols-3 gap-2 sm:gap-4 max-w-md mx-auto pt-2">
               <div className="bg-purple-950/50 border border-purple-500/20 rounded-2xl p-2.5 sm:p-3 text-center">
                 <span className="text-xl">🐣</span>
-                <p className="text-xs font-bold text-purple-200 mt-1">8 Silly Questions</p>
+                <p className="text-xs font-bold text-purple-200 mt-1">10 Silly Questions</p>
                 <p className="text-[10px] text-purple-300/70">Vaathu interviews Panda</p>
               </div>
               <div className="bg-purple-950/50 border border-purple-500/20 rounded-2xl p-2.5 sm:p-3 text-center">
@@ -316,28 +315,14 @@ Take the quiz: ${window.location.href}`;
               </div>
             </div>
 
-            {/* Start Button & Rose BGM indicator */}
-            <div className="pt-2 flex flex-col items-center gap-3">
+            {/* Start Button */}
+            <div className="pt-2">
               <button
                 onClick={handleStartQuiz}
                 className="group relative inline-flex items-center justify-center gap-3 px-8 sm:px-12 py-4 sm:py-5 rounded-3xl bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 text-white font-bubble text-lg sm:text-2xl font-bold shadow-2xl shadow-pink-500/40 hover:shadow-pink-500/60 hover:scale-105 active:scale-95 transition-all duration-300 border border-pink-400/30 cursor-pointer"
               >
                 <span>Start Our Little Quiz ❤️</span>
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-1.5 transition-transform" />
-              </button>
-
-              <button
-                onClick={() => {
-                  theRoseBGM.toggle();
-                  soundEffects.playPop();
-                }}
-                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-950/60 hover:bg-rose-900/80 border border-rose-500/30 text-rose-200 text-xs font-semibold transition-all cursor-pointer shadow-md"
-              >
-                <span>🌹</span>
-                <span>BGM: The Rose (Instrumental) – DC Movie (Anirudh)</span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded bg-rose-500/30 text-rose-300">
-                  Click to Toggle
-                </span>
               </button>
             </div>
           </div>
@@ -353,11 +338,11 @@ Take the quiz: ${window.location.href}`;
               <div className="flex items-center justify-between text-xs sm:text-sm font-semibold mb-2">
                 <div className="flex items-center gap-1.5 text-purple-200">
                   <span className="text-base">🦆</span>
-                  <span>Question {currentQuestion.questionNumber} of 8</span>
+                  <span>Question {currentQuestion.questionNumber} of 10</span>
                 </div>
                 <div className="flex items-center gap-1 text-pink-300">
                   <Heart className="w-3.5 h-3.5 fill-current animate-pulse" />
-                  <span>{Math.round((currentQuestion.questionNumber / 8) * 100)}% cute</span>
+                  <span>{Math.round((currentQuestion.questionNumber / 10) * 100)}% cute</span>
                 </div>
               </div>
 
@@ -365,7 +350,7 @@ Take the quiz: ${window.location.href}`;
               <div className="relative h-3 w-full bg-purple-900/80 rounded-full overflow-hidden p-0.5 border border-purple-700/50">
                 <div
                   className="h-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-400 rounded-full transition-all duration-500 shadow-md shadow-pink-500/50"
-                  style={{ width: `${(currentQuestion.questionNumber / 8) * 100}%` }}
+                  style={{ width: `${(currentQuestion.questionNumber / 10) * 100}%` }}
                 />
               </div>
             </div>
@@ -779,9 +764,6 @@ Take the quiz: ${window.location.href}`;
           <span>for Panda &amp; Vaathu &bull; No pandas or vaathus were harmed during interrogation</span>
         </p>
       </footer>
-
-      {/* The Rose BGM Player (DC Movie - Anirudh Ravichander) */}
-      <RosePlayer />
     </div>
   );
 }

@@ -26,7 +26,7 @@ export const ReviewModal: React.FC<ReviewModalProps> = ({
             </div>
             <div>
               <h3 className="font-bubble text-lg font-bold text-white">Our Complete Quiz Dialogue</h3>
-              <p className="text-xs text-purple-300">All 8 questions &amp; Vaathu&apos;s reactions</p>
+              <p className="text-xs text-purple-300">All 10 questions &amp; Vaathu&apos;s reactions</p>
             </div>
           </div>
           <button

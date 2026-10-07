@@ -97,7 +97,7 @@ export const CoupleCelebrationScene: React.FC = () => {
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-3xl overflow-hidden border-3 border-pink-400/80 shadow-2xl shadow-pink-500/30 group animate-fadeIn">
             <img
               src={DUO_IMAGE}
-              alt="Official Duck & Panda Couple Portrait"
+              alt="Official Panda & Vaathu Couple Portrait"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
