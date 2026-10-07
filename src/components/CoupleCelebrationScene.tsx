@@ -103,12 +103,12 @@ export const CoupleCelebrationScene: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-purple-950/60 via-transparent to-transparent pointer-events-none" />
             <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-purple-900/80 border border-purple-400/40 text-[11px] font-bold text-pink-200 shadow whitespace-nowrap">
-              Duck &amp; Panda Official ❤️
+              Panda &amp; Vaathu Official ❤️
             </div>
           </div>
         ) : (
           <div className="relative flex items-center justify-center">
-            {/* DUCK */}
+            {/* VAATHU */}
             <div
               className={`transition-all duration-500 z-10 ${
                 activeAction === 'hugging'
@@ -189,9 +189,9 @@ export const CoupleCelebrationScene: React.FC = () => {
 
       {/* Cute Caption for the active action */}
       <p className="text-xs sm:text-sm font-medium text-purple-200/90 text-center italic mt-1 bg-purple-900/40 px-4 py-1 rounded-full border border-purple-500/20">
-        {activeAction === 'portrait' && "The official heartwarming Duck & Panda couple memory! 📸✨"}
-        {activeAction === 'hugging' && "Duck is squishing Panda into a mega bear hug! ❤️"}
-        {activeAction === 'dancing' && "Duck and Panda doing their secret victory celebration waddle! 💃🕺"}
+        {activeAction === 'portrait' && "The official heartwarming Panda & Vaathu couple memory! 📸✨"}
+        {activeAction === 'hugging' && "Vaathu is squishing Panda into a mega bear hug! ❤️"}
+        {activeAction === 'dancing' && "Panda and Vaathu doing their secret victory celebration waddle! 💃🕺"}
         {activeAction === 'high-five' && "Epic team high-five for passing the couple interrogation! ✋✨"}
         {activeAction === 'blushing' && "Caught on camera being mutually obsessed with each other! 😳💖"}
       </p>

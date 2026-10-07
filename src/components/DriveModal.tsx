@@ -155,7 +155,7 @@ export const DriveModal: React.FC<DriveModalProps> = ({
               <h3 className="font-bubble text-lg font-bold text-white flex items-center gap-2">
                 <span>Google Drive Vault</span>
                 <span className="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-pink-300 border border-purple-400/30">
-                  🦆 &amp; 🐼
+                  🐼 &amp; 🦆
                 </span>
               </h3>
               <p className="text-xs text-purple-300">
@@ -278,7 +278,7 @@ export const DriveModal: React.FC<DriveModalProps> = ({
                   {currentResult.profile.title} ({currentResult.scores.cuteScore}% Cute)
                 </h4>
                 <p className="text-xs text-purple-200/80">
-                  Save this complete quiz session and Duck&apos;s love notes to Google Drive.
+                  Save this complete quiz session and Vaathu&apos;s love notes to Google Drive.
                 </p>
               </div>
 
@@ -321,7 +321,7 @@ export const DriveModal: React.FC<DriveModalProps> = ({
                 </div>
               ) : reports.length === 0 ? (
                 <div className="bg-purple-950/40 border border-purple-500/20 rounded-2xl p-6 text-center text-xs text-purple-300">
-                  <p>No saved Duck &amp; Panda reports found yet.</p>
+                  <p>No saved Panda &amp; Vaathu reports found yet.</p>
                   <p className="text-[11px] text-purple-400/70 mt-1">
                     Complete the quiz and click &ldquo;Save to Drive&rdquo; to store your first report!
                   </p>

@@ -49,7 +49,7 @@ export const DuckCharacter: React.FC<DuckCharacterProps> = ({
       className={`relative inline-flex items-center justify-center select-none transition-all duration-300 ${sizeMap[size]} ${className} ${
         isSpeaking ? 'animate-bounce-gentle scale-105' : 'hover:scale-105 active:scale-95'
       }`}
-      title="Duck 🦆 (The official inquisitive duck in blue bandana!)"
+      title="Vaathu 🦆 (The official inquisitive vaathu in blue bandana!)"
     >
       {/* Outer Glow Ring */}
       <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-amber-400/40 via-yellow-300/30 to-purple-500/20 blur-sm scale-105 pointer-events-none" />
@@ -60,7 +60,7 @@ export const DuckCharacter: React.FC<DuckCharacterProps> = ({
       >
         <img
           src={DUCK_IMAGE}
-          alt="Official Duck with blue bandana"
+          alt="Official Vaathu with blue bandana"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center transform scale-110 transition-transform duration-500"
         />

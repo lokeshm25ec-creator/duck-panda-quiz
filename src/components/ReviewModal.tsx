@@ -26,7 +26,7 @@ export const ReviewModal: React.FC<ReviewModalProps> = ({
             </div>
             <div>
               <h3 className="font-bubble text-lg font-bold text-white">Our Complete Quiz Dialogue</h3>
-              <p className="text-xs text-purple-300">All 8 questions &amp; Duck&apos;s reactions</p>
+              <p className="text-xs text-purple-300">All 8 questions &amp; Vaathu&apos;s reactions</p>
             </div>
           </div>
           <button
@@ -78,7 +78,7 @@ export const ReviewModal: React.FC<ReviewModalProps> = ({
                 {answer && (
                   <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-2.5 text-xs text-amber-200 flex items-center gap-2">
                     <span className="text-base">🦆</span>
-                    <span className="font-semibold text-amber-300">Duck:</span>
+                    <span className="font-semibold text-amber-300">Vaathu:</span>
                     <span className="italic">&ldquo;{answer.duckReaction}&rdquo;</span>
                   </div>
                 )}

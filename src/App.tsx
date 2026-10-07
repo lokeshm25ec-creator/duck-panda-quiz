@@ -153,7 +153,7 @@ export default function App() {
   // Copy couple report
   const handleCopyReport = () => {
     if (!finalProfile || !finalScores) return;
-    const text = `🦆❤️🐼 DUCK & PANDA: HOW CUTE ARE WE?
+    const text = `🐼❤️🦆 PANDA & VAATHU: HOW CUTE ARE WE?
 Title: "${finalProfile.title}" (${finalProfile.badge})
 ❤️ Cute Score: ${finalScores.cuteScore}%
 💖 Love Level: ${finalScores.loveLevel}%
@@ -162,7 +162,7 @@ Title: "${finalProfile.title}" (${finalProfile.badge})
 👀 Teasing Level: ${finalScores.teasingLevel}%
 
 Verdict: ${finalProfile.summary}
-Duck's Message: "${finalProfile.duckMessage}"
+Vaathu's Message: "${finalProfile.duckMessage}"
 Take the quiz: ${window.location.href}`;
 
     navigator.clipboard.writeText(text);
@@ -193,15 +193,15 @@ Take the quiz: ${window.location.href}`;
       <header className="relative z-20 w-full max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
           <div className="w-10 h-10 rounded-2xl bg-purple-900/80 border border-purple-500/30 flex items-center justify-center shadow-lg shadow-purple-950/40">
-            <span className="text-xl">🦆</span>
+            <span className="text-xl">🐼</span>
           </div>
           <span className="text-pink-400 font-bold text-sm sm:text-base">❤️</span>
           <div className="w-10 h-10 rounded-2xl bg-purple-900/80 border border-purple-500/30 flex items-center justify-center shadow-lg shadow-purple-950/40">
-            <span className="text-xl">🐼</span>
+            <span className="text-xl">🦆</span>
           </div>
           <div className="ml-1">
             <h1 className="font-bubble text-base sm:text-lg font-bold tracking-tight text-white flex items-center gap-1.5">
-              Duck &amp; Panda
+              Panda &amp; Vaathu
             </h1>
             <p className="text-[10px] sm:text-xs text-purple-300 font-medium -mt-0.5">
               How Cute Are We?
@@ -262,12 +262,12 @@ Take the quiz: ${window.location.href}`;
               <Heart className="w-3.5 h-3.5 text-pink-400 fill-current animate-pulse" />
             </div>
 
-            {/* Character Stage */}
+            {/* Character Stage: Panda first on left, Vaathu on right */}
             <div className="relative flex items-center justify-center gap-4 sm:gap-8 py-2">
               <div className="relative animate-float-slow">
-                <DuckCharacter size="lg" expression="excited" isSpeaking={false} />
-                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-amber-500/90 text-amber-950 font-bold text-[11px] shadow">
-                  Duck 🦆
+                <PandaCharacter size="lg" expression="happy" />
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-purple-200 text-purple-950 font-bold text-[11px] shadow">
+                  Panda 🐼
                 </span>
               </div>
 
@@ -280,9 +280,9 @@ Take the quiz: ${window.location.href}`;
               </div>
 
               <div className="relative animate-float-reverse">
-                <PandaCharacter size="lg" expression="happy" />
-                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-purple-200 text-purple-950 font-bold text-[11px] shadow">
-                  Panda 🐼
+                <DuckCharacter size="lg" expression="excited" isSpeaking={false} />
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-amber-500/90 text-amber-950 font-bold text-[11px] shadow">
+                  Vaathu 🦆
                 </span>
               </div>
             </div>
@@ -290,7 +290,7 @@ Take the quiz: ${window.location.href}`;
             {/* Title & Subtitle */}
             <div className="space-y-3">
               <h1 className="font-bubble text-4xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-purple-200 to-indigo-200 tracking-tight drop-shadow-sm">
-                Duck &amp; Panda
+                Panda &amp; Vaathu
               </h1>
               <p className="text-base sm:text-xl text-purple-200/90 font-medium max-w-lg mx-auto leading-relaxed">
                 &ldquo;Let&apos;s see how cute, chaotic, and compatible we really are&hellip;&rdquo;
@@ -302,7 +302,7 @@ Take the quiz: ${window.location.href}`;
               <div className="bg-purple-950/50 border border-purple-500/20 rounded-2xl p-2.5 sm:p-3 text-center">
                 <span className="text-xl">🐣</span>
                 <p className="text-xs font-bold text-purple-200 mt-1">8 Silly Questions</p>
-                <p className="text-[10px] text-purple-300/70">Duck interviews Panda</p>
+                <p className="text-[10px] text-purple-300/70">Vaathu interviews Panda</p>
               </div>
               <div className="bg-purple-950/50 border border-purple-500/20 rounded-2xl p-2.5 sm:p-3 text-center">
                 <span className="text-xl">💬</span>
@@ -381,7 +381,7 @@ Take the quiz: ${window.location.href}`;
                 />
                 <div className="text-left md:text-center">
                   <div className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-400/20 text-amber-300 text-[11px] font-bold border border-amber-400/30">
-                    🦆 Duck asks:
+                    🦆 Vaathu asks:
                   </div>
                   <p className="text-xs text-purple-300 font-medium mt-1">
                     Mood: <span className="text-pink-300 capitalize">{currentDuckMood.replace('-', ' ')}</span>
@@ -485,7 +485,7 @@ Take the quiz: ${window.location.href}`;
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="font-bubble text-sm font-bold text-amber-300">
-                        Duck&apos;s Reaction:
+                        Vaathu&apos;s Reaction:
                       </span>
                       <span className="text-xs px-2 py-0.5 rounded-full bg-pink-500/30 text-pink-200 border border-pink-400/40 font-semibold">
                         {currentDuckMood.replace('-', ' ')}
@@ -532,7 +532,7 @@ Take the quiz: ${window.location.href}`;
                 And the results are&hellip;
               </h2>
               <p className="text-sm text-purple-300 font-medium">
-                Duck is tallying the cute and chaotic points!
+                Vaathu is tallying the cute and chaotic points!
               </p>
             </div>
 
@@ -674,13 +674,13 @@ Take the quiz: ${window.location.href}`;
               <CoupleCelebrationScene />
             </div>
 
-            {/* DUCK'S MESSAGE TO PANDA CARD */}
+            {/* VAATHU'S MESSAGE TO PANDA CARD */}
             <div className="bg-gradient-to-br from-amber-500/15 via-purple-900/40 to-pink-500/20 border-2 border-amber-400/30 rounded-3xl p-5 shadow-2xl relative overflow-hidden">
               <div className="flex items-start gap-4">
                 <DuckCharacter size="sm" expression="blushing" className="shrink-0 -mt-2" />
                 <div className="flex-1">
                   <h3 className="font-bubble text-base sm:text-lg font-bold text-amber-300 flex items-center gap-2">
-                    <span>Duck&apos;s Message to Panda:</span>
+                    <span>Vaathu&apos;s Message to Panda:</span>
                     <Heart className="w-4 h-4 fill-current text-pink-400 inline" />
                   </h3>
                   <p className="text-sm sm:text-base font-semibold text-purple-100 italic leading-relaxed mt-1">
@@ -776,7 +776,7 @@ Take the quiz: ${window.location.href}`;
         <p className="flex items-center justify-center gap-1.5 font-medium">
           <span>Made with</span>
           <Heart className="w-3.5 h-3.5 fill-current text-pink-400 inline" />
-          <span>for Duck &amp; Panda &bull; No ducks or pandas were harmed during interrogation</span>
+          <span>for Panda &amp; Vaathu &bull; No pandas or vaathus were harmed during interrogation</span>
         </p>
       </footer>
 

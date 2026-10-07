@@ -51,7 +51,7 @@ export const QUESTIONS: Question[] = [
         id: "2a",
         text: "'I need snacks, a blanket burrito, and silent cuddles ASAP' 🌯",
         pandaExpression: "happy",
-        duckReaction: "1000% correct! You truly understand the sacred Duck language! 🏆❤️",
+        duckReaction: "1000% correct! You truly understand the sacred Vaathu language! 🏆❤️",
         duckExpression: "excited",
         scores: { cute: 10, chaos: 4, softness: 10, teasing: 4 }
       },
@@ -105,15 +105,15 @@ export const QUESTIONS: Question[] = [
       },
       {
         id: "3c",
-        text: "Duck! You pretend to be busy but you're refreshing the chat 💬",
+        text: "Vaathu! You pretend to be busy but you're refreshing the chat 💬",
         pandaExpression: "embarrassed",
-        duckReaction: "Excuse me! I'm a very busy duck with pond business! (Okay fine, I was staring at the typing dots) 🦆",
+        duckReaction: "Excuse me! I'm a very busy vaathu with pond business! (Okay fine, I was staring at the typing dots) 🦆",
         duckExpression: "blushing",
         scores: { cute: 9, chaos: 7, softness: 8, teasing: 8 }
       },
       {
         id: "3d",
-        text: "I refuse to go even 1 hour without checking on my favorite duck 🥺",
+        text: "I refuse to go even 1 hour without checking on my favorite vaathu 🥺",
         pandaExpression: "blushing",
         duckReaction: "MY HEART! Panda, stop being so criminally adorable right now! 💖🥺",
         duckExpression: "excited",
@@ -137,7 +137,7 @@ export const QUESTIONS: Question[] = [
       },
       {
         id: "4b",
-        text: "Duck! You quack loudly for 2 minutes then want cuddles 🐥",
+        text: "Vaathu! You quack loudly for 2 minutes then want cuddles 🐥",
         pandaExpression: "laughing",
         duckReaction: "Listen here, my feathers get ruffled easily but my heart is pure marshmallow! 😤💕",
         duckExpression: "blushing",
@@ -187,13 +187,13 @@ export const QUESTIONS: Question[] = [
         id: "5c",
         text: "Taking a 4-hour nap under three heavy blankets together 💤",
         pandaExpression: "happy",
-        duckReaction: "Professional hibernate mode activated! Save room for Duck under the duvet! 🛌🦆",
+        duckReaction: "Professional hibernate mode activated! Save room for Vaathu under the duvet! 🛌🦆",
         duckExpression: "excited",
         scores: { cute: 9, chaos: 3, softness: 10, teasing: 4 }
       },
       {
         id: "5d",
-        text: "Duck doing a funny little waddle dance to cheer me up 💃",
+        text: "Vaathu doing a funny little waddle dance to cheer me up 💃",
         pandaExpression: "laughing",
         duckReaction: "You know I will embarrass myself anywhere just to see your silly panda smile! 🕺✨",
         duckExpression: "excited",
@@ -217,7 +217,7 @@ export const QUESTIONS: Question[] = [
       },
       {
         id: "6b",
-        text: "Duck! You hit 'Next Episode' faster than lighting while gasping at plot twists ⚡",
+        text: "Vaathu! You hit 'Next Episode' faster than lighting while gasping at plot twists ⚡",
         pandaExpression: "shocked",
         duckReaction: "THEY LEFT US ON A CLIFFHANGER, PANDA! I couldn't just abandon our characters! 📺🤯",
         duckExpression: "shocked",
@@ -244,12 +244,12 @@ export const QUESTIONS: Question[] = [
   {
     id: 7,
     questionNumber: 7,
-    duckQuestion: "If Duck and Panda went on a random midnight adventure, who would plan it and who would just follow for the snacks?",
+    duckQuestion: "If Panda and Vaathu went on a random midnight adventure, who would plan it and who would just follow for the snacks?",
     duckPromptMood: "excited",
     choices: [
       {
         id: "7a",
-        text: "Duck has the master plan; Panda is strictly here for the 7-Eleven snacks 🏪",
+        text: "Vaathu has the master plan; Panda is strictly here for the 7-Eleven snacks 🏪",
         pandaExpression: "happy",
         duckReaction: "I provide navigation and vibes, you carry the iced tea and mochi! The perfect duo! 🎒🧋",
         duckExpression: "excited",
@@ -265,7 +265,7 @@ export const QUESTIONS: Question[] = [
       },
       {
         id: "7c",
-        text: "Panda is the designated driver; Duck is screaming song lyrics out the window 🎶",
+        text: "Panda is the designated driver; Vaathu is screaming song lyrics out the window 🎶",
         pandaExpression: "laughing",
         duckReaction: "Quacking off-key to pop songs at 1 AM is essential road trip therapy! 🎤🦆",
         duckExpression: "excited",
@@ -297,7 +297,7 @@ export const QUESTIONS: Question[] = [
       },
       {
         id: "8b",
-        text: "Duck! Your camera roll is 90% unhinged candid pictures of me sleeping 📸",
+        text: "Vaathu! Your camera roll is 90% unhinged candid pictures of me sleeping 📸",
         pandaExpression: "laughing",
         duckReaction: "THEY ARE VALUABLE HISTORICAL ARCHIVES! ...and maybe you look really cute okay?! 😳🦆",
         duckExpression: "embarrassed",
@@ -389,7 +389,7 @@ export function calculateQuizResults(answers: AnswerChoice[]): { scores: QuizSco
       colorScheme: "from-purple-500 to-pink-500",
       tagline: "A perfectly balanced blend of romance, laughs, and pure cuteness.",
       summary: `You two are ${cuteScore}% cute, ${loveLevel}% madly in love, and completely tuned to the same wavelength. You balance each other out like milk and cookies!`,
-      duckMessage: "Panda, every single day with you is my new favorite day. Thank you for answering my silly questions—you're stuck with this duck forever! 🦆❤️🐼"
+      duckMessage: "Panda, every single day with you is my new favorite day. Thank you for answering my silly questions—you're stuck with this vaathu forever! 🦆❤️🐼"
     };
   }
 

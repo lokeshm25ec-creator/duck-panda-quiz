@@ -9,10 +9,10 @@ export interface DriveReportFile {
   size?: string;
 }
 
-const FOLDER_NAME = 'Duck & Panda Couple Reports 🦆🐼';
+const FOLDER_NAME = 'Panda & Vaathu Couple Reports 🐼🦆';
 
 /**
- * Finds or creates the dedicated folder for Duck & Panda reports in Google Drive
+ * Finds or creates the dedicated folder for Panda & Vaathu reports in Google Drive
  */
 export async function getOrCreateReportsFolder(accessToken: string): Promise<string> {
   // Check if folder already exists
@@ -42,12 +42,12 @@ export async function getOrCreateReportsFolder(accessToken: string): Promise<str
     body: JSON.stringify({
       name: FOLDER_NAME,
       mimeType: 'application/vnd.google-apps.folder',
-      description: 'Saved couple compatibility reports from Duck & Panda: How Cute Are We?'
+      description: 'Saved couple compatibility reports from Panda & Vaathu: How Cute Are We?'
     })
   });
 
   if (!createRes.ok) {
-    throw new Error('Failed to create Duck & Panda folder in Google Drive');
+    throw new Error('Failed to create Panda & Vaathu folder in Google Drive');
   }
 
   const newFolder = await createRes.json();
@@ -55,7 +55,7 @@ export async function getOrCreateReportsFolder(accessToken: string): Promise<str
 }
 
 /**
- * Upload a Duck & Panda Couple Report to Google Drive
+ * Upload a Panda & Vaathu Couple Report to Google Drive
  */
 export async function saveReportToDrive(params: {
   scores: QuizScores;
@@ -71,9 +71,9 @@ export async function saveReportToDrive(params: {
   const folderId = await getOrCreateReportsFolder(accessToken);
 
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  const fileName = `Duck_Panda_Report_${params.profile.title.replace(/\s+/g, '_')}_${timestamp.slice(0, 10)}.md`;
+  const fileName = `Panda_Vaathu_Report_${params.profile.title.replace(/\s+/g, '_')}_${timestamp.slice(0, 10)}.md`;
 
-  const fileContent = `# 🦆❤️🐼 Duck & Panda: How Cute Are We?
+  const fileContent = `# 🐼❤️🦆 Panda & Vaathu: How Cute Are We?
 **Official Couple Compatibility Report**
 *Generated on: ${new Date().toLocaleString()}*
 
@@ -98,7 +98,7 @@ export async function saveReportToDrive(params: {
 ## 💬 Summary & Verdict
 ${params.profile.summary}
 
-### 💌 Duck's Message to Panda:
+### 💌 Vaathu's Message to Panda:
 > "${params.profile.duckMessage}"
 
 ---
@@ -108,12 +108,12 @@ ${params.questions.map((q, idx) => {
   const ans = params.answers[idx];
   return `### Question ${idx + 1}: "${q.duckQuestion}"
 - **🐼 Panda answered:** ${ans ? ans.text : 'N/A'}
-- **🦆 Duck's reaction:** "${ans ? ans.duckReaction : 'N/A'}"
+- **🦆 Vaathu's reaction:** "${ans ? ans.duckReaction : 'N/A'}"
 `;
 }).join('\n')}
 
 ---
-*Created with the "Duck & Panda: How Cute Are We?" Web Game.*
+*Created with the "Panda & Vaathu: How Cute Are We?" Web Game.*
 `;
 
   // Multipart upload to Google Drive
@@ -159,7 +159,7 @@ ${params.questions.map((q, idx) => {
 }
 
 /**
- * List all saved Duck & Panda reports from Google Drive
+ * List all saved Panda & Vaathu reports from Google Drive
  */
 export async function listReportsFromDrive(): Promise<DriveReportFile[]> {
   const accessToken = await getAccessToken();
@@ -167,7 +167,7 @@ export async function listReportsFromDrive(): Promise<DriveReportFile[]> {
     throw new Error('No Google Drive access token found.');
   }
 
-  const query = encodeURIComponent(`name contains 'Duck_Panda_Report' and trashed = false`);
+  const query = encodeURIComponent(`name contains 'Report' and trashed = false`);
   const res = await fetch(
     `https://www.googleapis.com/drive/v3/files?q=${query}&fields=files(id,name,createdTime,webViewLink,size)&orderBy=createdTime desc`,
     {
