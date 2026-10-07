@@ -1,0 +1,6 @@
+{
+  "name": "Duck & Panda: How Cute Are We?",
+  "description": "A cute, funny, and interactive couple quiz web game where Duck interviews Panda to discover their cute, chaotic, and romance compatibility score.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
