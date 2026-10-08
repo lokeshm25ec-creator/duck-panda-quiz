@@ -6,9 +6,6 @@ import { PandaCharacter } from './components/PandaCharacter';
 import { CoupleCelebrationScene } from './components/CoupleCelebrationScene';
 import { ConfettiEffect } from './components/ConfettiEffect';
 import { ReviewModal } from './components/ReviewModal';
-import { DriveModal } from './components/DriveModal';
-import { initAuth } from './services/auth';
-import { User } from 'firebase/auth';
 import { soundEffects } from './utils/soundEffects';
 import { theRoseBGM } from './utils/theRoseAudio';
 import {
@@ -23,8 +20,7 @@ import {
   Flame,
   Laugh,
   Eye,
-  MessageSquareHeart,
-  HardDrive
+  MessageSquareHeart
 } from 'lucide-react';
 
 type GameState = 'welcome' | 'quiz' | 'suspense' | 'result';
@@ -45,22 +41,9 @@ export default function App() {
 
   // Modals & UI states
   const [showReview, setShowReview] = useState<boolean>(false);
-  const [showDriveModal, setShowDriveModal] = useState<boolean>(false);
-  const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [copiedToast, setCopiedToast] = useState<boolean>(false);
   const [soundOn, setSoundOn] = useState<boolean>(true);
   const [suspenseProgress, setSuspenseProgress] = useState<number>(0);
-
-  // Initialize auth listener
-  useEffect(() => {
-    const unsubscribe = initAuth(
-      (user) => setCurrentUser(user),
-      () => setCurrentUser(null)
-    );
-    return () => {
-      if (typeof unsubscribe === 'function') unsubscribe();
-    };
-  }, []);
 
   const currentQuestion = QUESTIONS[currentQuestionIndex];
 
@@ -211,25 +194,6 @@ Take the quiz: ${window.location.href}`;
         </div>
 
         <div className="flex items-center gap-2">
-          {/* Google Drive Vault Button (Hidden on front page) */}
-          {gameState === 'result' && (
-            <button
-              onClick={() => {
-                soundEffects.playPop();
-                setShowDriveModal(true);
-              }}
-              className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all shadow-md cursor-pointer ${
-                currentUser
-                  ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-300 hover:bg-emerald-900/60'
-                  : 'bg-purple-900/60 border-purple-500/40 text-purple-200 hover:bg-purple-800/80'
-              }`}
-              title="Google Drive Vault"
-            >
-              <HardDrive className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">{currentUser ? 'Drive Connected' : 'Google Drive'}</span>
-            </button>
-          )}
-
           {gameState === 'quiz' && (
             <button
               onClick={handleRestart}
@@ -682,19 +646,8 @@ Take the quiz: ${window.location.href}`;
             {/* ACTION BUTTONS */}
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
               <button
-                onClick={() => {
-                  soundEffects.playPop();
-                  setShowDriveModal(true);
-                }}
-                className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-white font-bubble text-base font-bold shadow-xl shadow-amber-500/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
-              >
-                <HardDrive className="w-4 h-4" />
-                <span>Save to Google Drive 📁</span>
-              </button>
-
-              <button
                 onClick={handleRestart}
-                className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white font-bubble text-base font-bold shadow-xl shadow-pink-500/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+                className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white font-bubble text-base font-bold shadow-xl shadow-pink-500/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
               >
                 <RotateCcw className="w-4 h-4" />
                 <span>Play Again 🔄</span>
@@ -702,7 +655,7 @@ Take the quiz: ${window.location.href}`;
 
               <button
                 onClick={handleCopyReport}
-                className="px-6 py-3.5 rounded-2xl bg-purple-900/80 hover:bg-purple-800 text-purple-100 font-bubble text-base font-bold border border-purple-500/40 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 shadow-lg"
+                className="px-6 py-3.5 rounded-2xl bg-purple-900/80 hover:bg-purple-800 text-purple-100 font-bubble text-base font-bold border border-purple-500/40 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 shadow-lg cursor-pointer"
               >
                 {copiedToast ? (
                   <>
@@ -722,7 +675,7 @@ Take the quiz: ${window.location.href}`;
                   soundEffects.playPop();
                   setShowReview(true);
                 }}
-                className="px-5 py-3.5 rounded-2xl bg-purple-950/60 hover:bg-purple-900/80 text-purple-300 font-bubble text-base font-bold border border-purple-600/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+                className="px-5 py-3.5 rounded-2xl bg-purple-950/60 hover:bg-purple-900/80 text-purple-300 font-bubble text-base font-bold border border-purple-600/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
               >
                 <MessageSquareHeart className="w-4 h-4" />
                 <span>Review Quiz Answers 💬</span>
@@ -738,25 +691,6 @@ Take the quiz: ${window.location.href}`;
           questions={QUESTIONS}
           userAnswers={answers}
           onClose={() => setShowReview(false)}
-        />
-      )}
-
-      {/* Google Drive Vault Modal */}
-      {showDriveModal && (
-        <DriveModal
-          user={currentUser}
-          onUserChange={setCurrentUser}
-          onClose={() => setShowDriveModal(false)}
-          currentResult={
-            finalScores && finalProfile
-              ? {
-                  scores: finalScores,
-                  profile: finalProfile,
-                  answers,
-                  questions: QUESTIONS
-                }
-              : null
-          }
         />
       )}
 
