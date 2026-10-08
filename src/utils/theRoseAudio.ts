@@ -5,6 +5,7 @@
 class RomanticBgmEngine {
   private ctx: AudioContext | null = null;
   private isPlaying: boolean = false;
+  public isMuted: boolean = false;
   private volume: number = 0.32; // Comfortable, sweet romantic volume
   private mainGain: GainNode | null = null;
   private masterFilter: BiquadFilterNode | null = null;
@@ -43,7 +44,8 @@ class RomanticBgmEngine {
 
     if (this.ctx && !this.mainGain) {
       this.mainGain = this.ctx.createGain();
-      this.mainGain.gain.setValueAtTime(this.volume, this.ctx.currentTime);
+      const effectiveGain = this.isMuted ? 0 : this.volume;
+      this.mainGain.gain.setValueAtTime(effectiveGain, this.ctx.currentTime);
 
       // Warm cinematic lowpass filter (removes any harsh frequencies)
       this.masterFilter = this.ctx.createBiquadFilter();
@@ -353,11 +355,29 @@ class RomanticBgmEngine {
 
   setVolume(vol: number) {
     this.volume = Math.max(0, Math.min(1, vol));
+    const target = this.isMuted ? 0 : this.volume;
     if (this.mainGain && this.ctx) {
-      this.mainGain.gain.setValueAtTime(this.volume, this.ctx.currentTime);
+      this.mainGain.gain.setValueAtTime(target, this.ctx.currentTime);
     }
     if (this.audioElement) {
-      this.audioElement.volume = this.volume;
+      this.audioElement.volume = target;
+    }
+  }
+
+  setMuted(muted: boolean) {
+    this.isMuted = muted;
+    const target = muted ? 0 : this.volume;
+    if (this.mainGain && this.ctx) {
+      this.mainGain.gain.cancelScheduledValues(this.ctx.currentTime);
+      this.mainGain.gain.setValueAtTime(target, this.ctx.currentTime);
+    }
+    if (this.audioElement) {
+      this.audioElement.volume = target;
+      if (muted) {
+        this.audioElement.pause();
+      } else if (this.isPlaying) {
+        this.audioElement.play().catch(() => {});
+      }
     }
   }
 }

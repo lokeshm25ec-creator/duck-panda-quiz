@@ -9,35 +9,35 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "1a",
-        text: "Obviously Panda 😌 (I call it a tax, not stealing)",
+        text: "Panda 100%. My 'one bite' has the geometric surface area of a shark attack 🦈🍔",
         pandaExpression: "embarrassed",
-        duckReaction: "I knew it! My fries have never been safe for even three seconds! 🍟😭",
+        duckReaction: "I KNEW IT! My burgers look like they survived an archaeological excavation! 😭🍟",
         duckExpression: "shocked",
         scores: { cute: 8, chaos: 9, softness: 6, teasing: 8 }
       },
       {
         id: "1b",
-        text: "Definitely Vaathu! You eye my snacks like a tiny yellow hawk 😂",
+        text: "Vaathu! You say 'just tasting' and suddenly my fries need a missing persons report 🍟🚨",
         pandaExpression: "laughing",
-        duckReaction: "Hey! That is quality control inspection, not stealing! How dare you! 😤🐣",
+        duckReaction: "Hey! That is mandatory government quality control! Be grateful for my service! 😤🐣",
         duckExpression: "angry-but-cute",
         scores: { cute: 9, chaos: 7, softness: 7, teasing: 10 }
       },
       {
         id: "1c",
-        text: "Both of us... snack wars are an everyday event here ⚔️🍕",
+        text: "Both of us. We eat like two competitive raccoons behind an unattended pizza shop 🦝🍕",
         pandaExpression: "excited",
-        duckReaction: "True... neither of us can be trusted around garlic bread. It's mutual chaos! 🤤",
+        duckReaction: "Accurate! There is no honor, no peace treaty, only survival when pizza arrives! 🍕⚔️",
         duckExpression: "laughing",
         scores: { cute: 9, chaos: 10, softness: 5, teasing: 7 }
       },
       {
         id: "1d",
-        text: "I always share willingly because I love you ❤️ (mostly)",
+        text: "I offer to share politely, but my eyes whisper 'touch this and face federal charges' 👁️🔪",
         pandaExpression: "shy",
-        duckReaction: "Awww wait, stop being sweet, I'm trying to interrogate you here! 🥹✨",
+        duckReaction: "The silent deadly glare! I withdraw my tiny feathers for my own safety! 😳🦆",
         duckExpression: "blushing",
-        scores: { cute: 10, chaos: 2, softness: 10, teasing: 3 }
+        scores: { cute: 10, chaos: 4, softness: 8, teasing: 6 }
       }
     ]
   },
@@ -49,35 +49,35 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "2a",
-        text: "'Bring snacks, a blanket burrito, and give quiet cuddles ASAP' 🌯",
+        text: "'Evacuate the perimeter. Order chocolate. Apologize for breathing too loudly' 🍫💣",
         pandaExpression: "happy",
-        duckReaction: "1000% correct! You truly understand the sacred Vaathu language! 🏆❤️",
+        duckReaction: "Brilliant survival instincts, Panda! You might actually survive this relationship! 🏆❤️",
         duckExpression: "excited",
         scores: { cute: 10, chaos: 4, softness: 10, teasing: 4 }
       },
       {
         id: "2b",
-        text: "'You have exactly 30 seconds to figure out what you did wrong' 💣",
-        pandaExpression: "shocked",
-        duckReaction: "The clock is ticking, Panda. Tick... tock... tick... tock... 👀⏱️",
-        duckExpression: "angry-but-cute",
-        scores: { cute: 8, chaos: 10, softness: 4, teasing: 9 }
+        text: "'Initiate emergency blanket burrito protocol and play cute animal videos' 🌯🐶",
+        pandaExpression: "shy",
+        duckReaction: "Rolling me into a warm sushi roll is literally the cure to all my life problems! 🥺✨",
+        duckExpression: "blushing",
+        scores: { cute: 10, chaos: 3, softness: 10, teasing: 3 }
       },
       {
         id: "2c",
-        text: "'Vaathu is secretly overthinking something from 3 weeks ago' 🧠💭",
-        pandaExpression: "shy",
-        duckReaction: "Oof, why did you have to read my soul so accurately?! 😭🙈",
+        text: "'Vaathu is currently drafting a 47-page imaginary courtroom closing argument' ⚖️🦆",
+        pandaExpression: "shocked",
+        duckReaction: "Your Honor, I object to being psychoanalyzed so accurately right now!! 😭🔨",
         duckExpression: "embarrassed",
-        scores: { cute: 9, chaos: 6, softness: 9, teasing: 7 }
+        scores: { cute: 9, chaos: 8, softness: 7, teasing: 9 }
       },
       {
         id: "2d",
-        text: "You are actually fine! ...Wait, is this a trap?! 🚨",
+        text: "'They said fine, so they must be fine!' (famous last words spoken before disaster) 💀⚰️",
         pandaExpression: "confused",
-        duckReaction: "Panda, sweet summer child... IT IS ALWAYS A TRAP! 🤣🦆",
+        duckReaction: "PANDA NO! Sweet innocent creature... that is how civilizations fall! 🤣🚨",
         duckExpression: "laughing",
-        scores: { cute: 7, chaos: 8, softness: 5, teasing: 10 }
+        scores: { cute: 7, chaos: 9, softness: 5, teasing: 10 }
       }
     ]
   },
@@ -89,35 +89,35 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "3a",
-        text: "Panda! Then I sleep like a log while you complain I'm snoring 😴",
+        text: "Panda! Then I pass out in 4 seconds and snore like a diesel tractor engine 🚜😴",
         pandaExpression: "embarrassed",
-        duckReaction: "Your snoring sounds like a baby motorboat! Adorable, but loud! 🚤😂",
+        duckReaction: "HONK SHOO HONK SHOO! You rattle the window panes while I'm wide awake! 🚜😂",
         duckExpression: "laughing",
-        scores: { cute: 9, chaos: 8, softness: 8, teasing: 8 }
+        scores: { cute: 9, chaos: 9, softness: 7, teasing: 9 }
       },
       {
         id: "3b",
-        text: "Vaathu! You laugh out loud at memes when I'm trying to sleep 📱🦆",
+        text: "Vaathu! You aggressively shake my shoulder at 2:45 AM yelling 'LOOK AT THIS DANCING FROG' 🐸📱",
         pandaExpression: "shocked",
-        duckReaction: "THE MEMES WERE TOP TIER, PANDA! I couldn't just keep them to myself! 📺🤯",
-        duckExpression: "shocked",
-        scores: { cute: 8, chaos: 9, softness: 6, teasing: 9 }
+        duckReaction: "THAT FROG HAD RHYTHM, PANDA! It was a cultural event! You needed to bear witness! 💃🐸",
+        duckExpression: "excited",
+        scores: { cute: 9, chaos: 9, softness: 6, teasing: 9 }
       },
       {
         id: "3c",
-        text: "We take turns enabling each other's terrible sleep schedule 💀",
+        text: "Both of us! Two sleep-deprived zombies sharing our last functioning brain cell 🧟‍♂️🧟‍♀️",
         pandaExpression: "excited",
-        duckReaction: "'Should we sleep?' 'Nah, one more.' Next thing we know birds are chirping outside! 🌙",
+        duckReaction: "At 3 AM our conversations sound like broken radio signals! We are completely unhinged! 🧠💀",
         duckExpression: "confused",
         scores: { cute: 9, chaos: 10, softness: 6, teasing: 7 }
       },
       {
         id: "3d",
-        text: "Neither, we are innocent angels who sleep peacefully at 10 PM 😇",
+        text: "The phone algorithms have taken us hostage, we are completely innocent victims! 👽📲",
         pandaExpression: "shy",
-        duckReaction: "Who are we lying to? But okay, that sounds dreamy and aesthetic! 🥰✨",
+        duckReaction: "Yes! Blame the evil algorithm! It forced us to watch 40 carpet cleaning videos! 🧼✨",
         duckExpression: "happy",
-        scores: { cute: 9, chaos: 2, softness: 10, teasing: 5 }
+        scores: { cute: 8, chaos: 8, softness: 8, teasing: 6 }
       }
     ]
   },
@@ -129,35 +129,35 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "4a",
-        text: "Neither. One of us sends an unhinged meme within 12 minutes 📱",
+        text: "Neither. Within 9 minutes someone sends an unhinged meme with zero context 🤡💬",
         pandaExpression: "laughing",
-        duckReaction: "Facts. We have zero chill and zero emotional endurance! 😂",
+        duckReaction: "No greeting, no 'hello', just a photo of a cursed pigeon! That is true love! 🐦💬",
         duckExpression: "laughing",
-        scores: { cute: 10, chaos: 8, softness: 9, teasing: 5 }
+        scores: { cute: 10, chaos: 8, softness: 9, teasing: 6 }
       },
       {
         id: "4b",
-        text: "Panda! I have the stoic mental discipline of a sleeping rock 🪨",
+        text: "Panda! I can stare at a blank ceiling for 6 hours without a single thought 🪨🧘‍♂️",
         pandaExpression: "excited",
-        duckReaction: "Lies! You double-text me every time you see a cute panda video! 🤨🐼",
+        duckReaction: "Lies! The moment you get hungry your paws instinctively type 'vaathu food?' 🍔🐾",
         duckExpression: "confused",
         scores: { cute: 7, chaos: 6, softness: 6, teasing: 9 }
       },
       {
         id: "4c",
-        text: "Vaathu pretends to be busy, but is secretly staring at the chat 💬",
+        text: "Vaathu tries to stay quiet, but fails because you HAVE to report neighborhood drama 📢🦆",
         pandaExpression: "embarrassed",
-        duckReaction: "Excuse me! I'm a very busy vaathu! (Okay fine, I was watching the typing dots) 🦆",
-        duckExpression: "blushing",
+        duckReaction: "THE NEIGHBOR'S CAT CLIMBED ON THE ROOF, PANDA! I am a frontline investigative reporter! 🕵️‍♀️📰",
+        duckExpression: "shocked",
         scores: { cute: 9, chaos: 7, softness: 8, teasing: 8 }
       },
       {
         id: "4d",
-        text: "I refuse to go even 1 hour without checking on my favorite vaathu 🥺",
+        text: "I last 30 seconds before panic-asking 'Are you mad at me or did you get kidnapped?' 🥺🚨",
         pandaExpression: "blushing",
-        duckReaction: "MY HEART! Panda, stop being so criminally adorable right now! 💖🥺",
-        duckExpression: "excited",
-        scores: { cute: 10, chaos: 2, softness: 10, teasing: 2 }
+        duckReaction: "OMG PANDA!! Stop being so precious before my heart combusts into pure glitter! 💖💥",
+        duckExpression: "blushing",
+        scores: { cute: 10, chaos: 3, softness: 10, teasing: 2 }
       }
     ]
   },
@@ -169,33 +169,33 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "5a",
-        text: "Panda! I'm pouting in the corner secretly wanting to be squished 🥺",
+        text: "Panda! I'm sitting there trying to look tough while secretly wanting to be squished 🥺",
         pandaExpression: "shy",
-        duckReaction: "I see right through your grumpy panda cheeks! Prepare to be hugged immediately! 🫂",
+        duckReaction: "You look like a grumpy little toasted marshmallow! Come here and take your hug! 🫂🔥",
         duckExpression: "happy",
         scores: { cute: 10, chaos: 4, softness: 10, teasing: 4 }
       },
       {
         id: "5b",
-        text: "Vaathu! You make angry duck noises for 2 minutes then want cuddles 🐣",
+        text: "Vaathu! You make aggressive angry quacking noises for 90 seconds then demand cuddles 🐣💢",
         pandaExpression: "laughing",
-        duckReaction: "Listen here, my feathers get ruffled easily but my heart is pure marshmallow! 😤💕",
+        duckReaction: "Look, my anger has an expiration date of 2 minutes, then my cuddle timer starts! 😤💕",
         duckExpression: "blushing",
         scores: { cute: 9, chaos: 6, softness: 9, teasing: 7 }
       },
       {
         id: "5c",
-        text: "Both of us, but we stubbornly glare for another 30 seconds 🙄",
+        text: "Both of us! We glare like anime rivals until someone accidentally snorts or laughs 🤣⚔️",
         pandaExpression: "embarrassed",
-        duckReaction: "The dramatic couple standoff! Staring angrily while inching closer and closer! 🤣",
+        duckReaction: "The classic 'trying not to smile' mouth twitch! The moment one cracks, it's over! 💀",
         duckExpression: "laughing",
         scores: { cute: 9, chaos: 8, softness: 8, teasing: 8 }
       },
       {
         id: "5d",
-        text: "Whoever gets bribed with bubble tea or hot food first 🧋",
+        text: "Whoever gets lured out of hiding by the smell of hot biryani or crispy fries 🍗🤤",
         pandaExpression: "happy",
-        duckReaction: "Snacks solve 99.9% of all international couple disputes! 🍵✨",
+        duckReaction: "Food diplomacy: uniting Pandas and Vaathus worldwide since the beginning of time! 🍗✨",
         duckExpression: "excited",
         scores: { cute: 8, chaos: 8, softness: 7, teasing: 6 }
       }
@@ -209,33 +209,33 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "6a",
-        text: "We spend 45 minutes saying 'I don't know, you choose' 🤦‍♂️",
+        text: "The Olympic 50-Minute 'Anything is fine' -> 'No, not that' World Championship 🏅🤦‍♂️",
         pandaExpression: "embarrassed",
-        duckReaction: "The daily existential crisis! It's like neither of us has ever eaten food before! 🍜😂",
+        duckReaction: "'You choose!' 'Okay, tacos?' 'No, not tacos.' 'Sushi?' 'No.' AND REPEAT 40 TIMES! 🌮💀",
         duckExpression: "laughing",
         scores: { cute: 8, chaos: 9, softness: 7, teasing: 8 }
       },
       {
         id: "6b",
-        text: "Panda rejects the first 6 options until we order fries anyway 🍟",
+        text: "Panda rejects 14 Michelin restaurants then decides on 20 chicken nuggets 🍗✨",
         pandaExpression: "laughing",
-        duckReaction: "Every single time! 'No, not pizza. No, not noodles.' *orders 30 fries* 🍟💀",
+        duckReaction: "A connoisseur of high culinary art! 20 nuggets and sweet-and-sour sauce every time! 🏆",
         duckExpression: "angry-but-cute",
         scores: { cute: 9, chaos: 8, softness: 6, teasing: 9 }
       },
       {
         id: "6c",
-        text: "Vaathu already decided 3 hours ago and was just testing me 👀",
+        text: "Vaathu already picked a place 4 hours ago and is waiting for me to guess it wrong 🎯🔮",
         pandaExpression: "shocked",
-        duckReaction: "Hey! A vaathu has to test your psychic telepathy connection! 🧠🔮",
+        duckReaction: "It's an IQ test, Panda! If you truly love me, your mind should read my mind! 🧠🔮",
         duckExpression: "excited",
         scores: { cute: 9, chaos: 7, softness: 8, teasing: 9 }
       },
       {
         id: "6d",
-        text: "We end up eating noodles or cereal in our pajamas like cozy gremlins 🥣",
+        text: "We give up on adulting and eat cereal in bed while questioning our life choices 🥣🛋️",
         pandaExpression: "happy",
-        duckReaction: "And honestly? Those pajama dinners are our top tier dates! 🛋️❤️",
+        duckReaction: "Crunching cereal in pajama blankets together is honestly peak relationship luxury! 🥣💖",
         duckExpression: "happy",
         scores: { cute: 10, chaos: 5, softness: 10, teasing: 4 }
       }
@@ -249,33 +249,33 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "7a",
-        text: "Panda! I require 100% of your undivided attention at all times 🐼✨",
+        text: "Panda! I will literally rest my heavy head directly on your phone screen until you pet me 🐼📱",
         pandaExpression: "shy",
-        duckReaction: "A needy baby panda is literally the cutest thing in the universe! 🥺💖",
+        duckReaction: "The human headrest tactic! Resistance is completely futile against panda cheeks! 🥺💖",
         duckExpression: "blushing",
         scores: { cute: 10, chaos: 5, softness: 10, teasing: 4 }
       },
       {
         id: "7b",
-        text: "Vaathu! Your feathers get ruffled if I don't reply within 4 seconds 🪶",
+        text: "Vaathu! If I take 12 seconds to reply, you send 15 question marks and a dramatic skull 💀❓",
         pandaExpression: "laughing",
-        duckReaction: "4 seconds is a lifetime, Panda! What if there was an emergency cute dog photo?! 🐶😤",
+        duckReaction: "WHAT WERE YOU DOING FOR THOSE 12 SECONDS PANDA?! WERE YOU GETTING A DEGREE?! 🎓😤",
         duckExpression: "angry-but-cute",
         scores: { cute: 9, chaos: 7, softness: 8, teasing: 9 }
       },
       {
         id: "7c",
-        text: "Both of us are dramatic attention gremlins 🤡",
+        text: "Both of us! Two Stage-5 clingy gremlins competing for 24/7 attention 🧲🤪",
         pandaExpression: "excited",
-        duckReaction: "We will literally poke each other on the shoulder until someone laughs! 🤣👉",
+        duckReaction: "We are both certified Velcro pets! Separation anxiety starts after 8 seconds apart! 🧲😂",
         duckExpression: "laughing",
         scores: { cute: 9, chaos: 9, softness: 7, teasing: 7 }
       },
       {
         id: "7d",
-        text: "We pretend to be mature and unbothered (it lasts 45 seconds) 🕶️",
+        text: "We pretend we're super chill and independent, but our souls are emotionally vibrating 📳😤",
         pandaExpression: "embarrassed",
-        duckReaction: "World record for fake emotional maturity: 45 seconds flat! ⏱️😂",
+        duckReaction: "'I don't care at all.' *secretly refreshing notifications at 400 clicks per minute* 🕶️",
         duckExpression: "confused",
         scores: { cute: 8, chaos: 8, softness: 8, teasing: 8 }
       }
@@ -289,33 +289,33 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "8a",
-        text: "Panda drives responsibly; Vaathu screams song lyrics at the moon 🎶",
+        text: "Panda drives carefully; Vaathu does full Broadway screeching in the passenger seat 🎤🦆",
         pandaExpression: "laughing",
-        duckReaction: "Quacking off-key to pop songs at 1 AM is mandatory road trip therapy! 🎤🦆",
+        duckReaction: "You're getting a free live concert with special duck acoustics! You should be tipping me! 🎶",
         duckExpression: "excited",
         scores: { cute: 9, chaos: 9, softness: 7, teasing: 8 }
       },
       {
         id: "8b",
-        text: "Vaathu plans the whole route; Panda is strictly here for the 7-Eleven snacks 🏪",
+        text: "Vaathu gives panic GPS directions ('TURN HERE NO THE OTHER LEFT') while Panda sweats 🗺️🚗",
         pandaExpression: "happy",
-        duckReaction: "I provide navigation and vibes, you carry the iced tea and mochi! The perfect duo! 🎒🧋",
+        duckReaction: "'The other left' is a scientifically valid spatial coordinate, Panda! Don't blame me! 🗺️😂",
         duckExpression: "excited",
         scores: { cute: 9, chaos: 7, softness: 8, teasing: 6 }
       },
       {
         id: "8c",
-        text: "We talk about going for an hour then stay wrapped in our blankets 🛋️",
+        text: "We spend 40 minutes looking for shoes, get exhausted, and just sit eating chips in the driveway 🛋️🥔",
         pandaExpression: "embarrassed",
-        duckReaction: "Peak couple milestone: pajama date night beats the outside world 10/10! 🛌❤️",
+        duckReaction: "Car never left the garage, but the snack bag is empty! Mission accomplished! 🚗🍟",
         duckExpression: "happy",
         scores: { cute: 10, chaos: 4, softness: 10, teasing: 4 }
       },
       {
         id: "8d",
-        text: "We get lost in 10 minutes and end up eating ice cream in the car 🍦",
+        text: "Panda's sole mission is raiding 7-Eleven like a convenience store bandit 🏪🎒",
         pandaExpression: "blushing",
-        duckReaction: "Honestly? Getting lost with Panda is my favorite destination anyway. 🥹✨",
+        duckReaction: "Walking out with 4 iced teas, 3 bags of chips, and zero regrets! That's my panda! 🧋🛒",
         duckExpression: "blushing",
         scores: { cute: 10, chaos: 8, softness: 10, teasing: 5 }
       }
@@ -329,33 +329,33 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "9a",
-        text: "Panda! I treat it as modern interior art until you notice 🎨",
+        text: "Panda! I classify it as a permanent modern art installation to test your patience 🗿🎨",
         pandaExpression: "embarrassed",
-        duckReaction: "Modern art?! It's a crushed juice box, Panda! A crushed juice box! 🧃🤣",
+        duckReaction: "'The Melancholy of the Empty Boba Cup' by Panda, 2026! Louvre museum when?! 🎨🤣",
         duckExpression: "laughing",
         scores: { cute: 8, chaos: 9, softness: 6, teasing: 9 }
       },
       {
         id: "9b",
-        text: "Vaathu! You stare at it hoping it magically evaporates into thin air 🪄",
+        text: "Vaathu! You glare at the trash expecting it to spontaneously combust into ashes 🪄🔥",
         pandaExpression: "laughing",
-        duckReaction: "Hey! One day magic will work, and on that day I will be vindicated! 🧙‍♂️✨",
+        duckReaction: "My laser eyes will work one day! Mind over matter, Panda! You'll see! 🧙‍♂️⚡",
         duckExpression: "excited",
         scores: { cute: 9, chaos: 8, softness: 7, teasing: 9 }
       },
       {
         id: "9c",
-        text: "It turns into an intense standoff of 'whoever touches it loses' ⚔️",
+        text: "It becomes a game of psychological warfare where whoever touches it first is a loser ♟️👀",
         pandaExpression: "excited",
-        duckReaction: "We will literally walk around a wrapper for 4 days just on principle! 💀",
+        duckReaction: "We will literally set our coffee mugs on top of the wrapper rather than throw it out! 💀",
         duckExpression: "angry-but-cute",
         scores: { cute: 8, chaos: 10, softness: 5, teasing: 8 }
       },
       {
         id: "9d",
-        text: "We both ignore it and playfully blame the imaginary house ghost 👻",
+        text: "We both look at each other and say 'Must be that messy house ghost again' 👻🥤",
         pandaExpression: "shy",
-        duckReaction: "The house ghost is very messy and loves potato chips! Not our fault! 🥔👻",
+        duckReaction: "That ghost has terrible manners and an addiction to potato chips! We are innocent! 🥔👻",
         duckExpression: "happy",
         scores: { cute: 10, chaos: 7, softness: 9, teasing: 6 }
       }
@@ -369,33 +369,33 @@ export const QUESTIONS: Question[] = [
     choices: [
       {
         id: "10a",
-        text: "Me! I act cool, but I literally look at you like you're magic 🐼💖",
+        text: "Panda! I act all nonchalant, but I literally look at you like you invented sliced bread 🍞🐼",
         pandaExpression: "blushing",
-        duckReaction: "MY HEART JUST MELTED INTO A PUDDLE! Panda you can't say that to me!! 😭❤️❤️❤️",
+        duckReaction: "MY HEART JUST EXPLODED INTO 500 BILLION SPARKLES! Stop being so cute I can't breathe!! 😭💖💖",
         duckExpression: "blushing",
         scores: { cute: 10, chaos: 2, softness: 10, teasing: 2 }
       },
       {
         id: "10b",
-        text: "Vaathu! Your camera roll is 95% goofy sleeping candid photos of me 📸",
+        text: "Vaathu! Your phone storage is 98% unflattering double-chin photos of me sleeping 📸😴",
         pandaExpression: "laughing",
-        duckReaction: "THEY ARE VALUABLE HISTORICAL ARCHIVES! ...and maybe you look really cute okay?! 😳🦆",
+        duckReaction: "THEY ARE VALUABLE HISTORICAL TREASURES! And your double chin is precious art okay?! 😳🦆",
         duckExpression: "embarrassed",
         scores: { cute: 9, chaos: 8, softness: 8, teasing: 9 }
       },
       {
         id: "10c",
-        text: "It's an absolute tie. Two goofy idiots hopelessly down bad for each other 🥰",
+        text: "It's an incurable tie. Two hopeless clowns completely head over heels in love 🤡💍",
         pandaExpression: "excited",
-        duckReaction: "Two goofy souls completely obsessed with each other forever! Case closed! 💍✨",
+        duckReaction: "Two certified clowns destined to be weird and obsessed with each other forever! Case closed! 💍✨",
         duckExpression: "excited",
         scores: { cute: 10, chaos: 6, softness: 10, teasing: 5 }
       },
       {
         id: "10d",
-        text: "I plead the fifth! My lawyer (a bamboo stick) told me to stay quiet 🎋",
+        text: "My lawyer (a giant bamboo stalk) has advised me not to answer this trap question 🎋🤐",
         pandaExpression: "shy",
-        duckReaction: "Your blushing panda ears say everything you're trying to hide! Gotcha! 🤭💕",
+        duckReaction: "Your blushing panda ears just confessed under oath! Guilty of loving Vaathu! Case dismissed! ⚖️💕",
         duckExpression: "laughing",
         scores: { cute: 9, chaos: 8, softness: 8, teasing: 9 }
       }

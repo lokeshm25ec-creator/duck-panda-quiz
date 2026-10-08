@@ -69,6 +69,7 @@ export default function App() {
     const next = !soundOn;
     setSoundOn(next);
     soundEffects.enabled = next;
+    theRoseBGM.setMuted(!next);
     if (next) soundEffects.playPop();
   };
 
@@ -76,6 +77,7 @@ export default function App() {
   const handleStartQuiz = () => {
     soundEffects.playCuteQuack();
     theRoseBGM.play();
+    theRoseBGM.setMuted(!soundOn);
     setAnswers([]);
     setCurrentQuestionIndex(0);
     setSelectedChoice(null);
@@ -209,22 +211,24 @@ Take the quiz: ${window.location.href}`;
         </div>
 
         <div className="flex items-center gap-2">
-          {/* Google Drive Vault Button */}
-          <button
-            onClick={() => {
-              soundEffects.playPop();
-              setShowDriveModal(true);
-            }}
-            className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all shadow-md cursor-pointer ${
-              currentUser
-                ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-300 hover:bg-emerald-900/60'
-                : 'bg-purple-900/60 border-purple-500/40 text-purple-200 hover:bg-purple-800/80'
-            }`}
-            title="Google Drive Vault"
-          >
-            <HardDrive className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">{currentUser ? 'Drive Connected' : 'Google Drive'}</span>
-          </button>
+          {/* Google Drive Vault Button (Hidden on front page) */}
+          {gameState === 'result' && (
+            <button
+              onClick={() => {
+                soundEffects.playPop();
+                setShowDriveModal(true);
+              }}
+              className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all shadow-md cursor-pointer ${
+                currentUser
+                  ? 'bg-emerald-950/60 border-emerald-500/40 text-emerald-300 hover:bg-emerald-900/60'
+                  : 'bg-purple-900/60 border-purple-500/40 text-purple-200 hover:bg-purple-800/80'
+              }`}
+              title="Google Drive Vault"
+            >
+              <HardDrive className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">{currentUser ? 'Drive Connected' : 'Google Drive'}</span>
+            </button>
+          )}
 
           {gameState === 'quiz' && (
             <button
